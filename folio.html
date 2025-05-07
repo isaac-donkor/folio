@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        body {
+    body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
@@ -20,8 +20,36 @@
             background: #1f2937;
             color: white;
             padding: 2rem;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
             animation: fadeInDown 1s ease;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            background: white;
+            overflow: hidden;
+            border-radius: 15px;
+            animation: rotateIn 1s ease;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-text {
+            flex: 1;
+        }
+        .github-link {
+            margin-top: 0.5rem;
+        }
+        .github-link a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         section {
             padding: 2rem;
@@ -40,6 +68,7 @@
             box-shadow: 0 4px 6px rgba(255,255,255,0.1);
             padding: 1rem;
             transition: transform 0.3s ease;
+            text-align: center;
         }
         .client-logo:hover, .project-card:hover {
             transform: scale(1.05);
@@ -51,6 +80,10 @@
         }
         .project-card {
             width: 250px;
+        }
+        .project-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
         }
         .contact-form {
             display: flex;
@@ -86,12 +119,32 @@
                 transform: translateY(0);
             }
         }
+        @keyframes rotateIn {
+            from {
+                transform: rotateY(90deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotateY(0);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>IT Assistant Portfolio</h1>
-        <p>Specializing in ML, Backend Development, Telephony & Network Infrastructure</p>
+        <div class="profile-pic">
+            <img src="your-image.jpg" alt="Profile Picture">
+        </div>
+        <div class="header-text">
+            <h1>Portfolio</h1>
+            <p>Specializing in ML, Backend Development, Telephony & Network Infrastructure</p>
+            <div class="github-link">
+                <a href="https://github.com/your-username" target="_blank">
+                    <i class="fab fa-github"></i> Visit My GitHub
+                </a>
+            </div>
+        </div>
     </header>
 
     <section>
