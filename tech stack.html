@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Stack | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .stack-card {
+      background: #111;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      width: 150px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .stack-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .stack-card i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #0ef;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .tech-stack a {
+  text-decoration: none;
+  color: inherit;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Tech Stack</h1>
+    <p>The tools and technologies I work with</p>
+  </header>
+
+  <section>
+  <h2>Tech Stack</h2>
+  <div class="tech-stack">
+    <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+      </div>
+    </a>
+    <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+      </div>
+    </a>
+    <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-flask"></i>
+        <h3>Flask</h3>
+      </div>
+    </a>
+    <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-server"></i>
+        <h3>Django</h3>
+      </div>
+    </a>
+    <a href="https://www.apachefriends.org/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-database"></i>
+        <h3>XAMPP</h3>
+      </div>
+    </a>
+    <a href="https://www.wampserver.com/en/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-database"></i>
+        <h3>WAMP</h3>
+      </div>
+    </a>
+    <a href="https://httpd.apache.org/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-server"></i>
+        <h3>Apache</h3>
+      </div>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+      </div>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+      </div>
+    </a>
+    <a href="https://isocpp.org/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-code"></i>
+        <h3>C++</h3>
+      </div>
+    </a>
+    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-code"></i>
+        <h3>C#</h3>
+      </div>
+    </a>
+    <a href="https://www.tensorflow.org/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-brain"></i>
+        <h3>TensorFlow</h3>
+      </div>
+    </a>
+    <a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer">
+      <div class="stack-card">
+        <i class="fas fa-brain"></i>
+        <h3>PyTorch</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
