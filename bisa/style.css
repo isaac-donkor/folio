@@ -1,0 +1,50 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .btn-dark-outline {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #e0e0e0;
+  }
+
+  .btn-dark-outline:hover {
+    background-color: #2a2a2a;
+  }
