@@ -1,0 +1,88 @@
+.data-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    background-color: #111;
+}
+
+.project-grid {
+    /* Creates a responsive grid layout for project cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.data-project-card {
+    background: #1f2937; /* Dark background for card */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data-project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 150, 255, 0.3); /* Blue glowing effect */
+}
+
+.data-project-card h3 {
+    color: #4CAF50; /* Green color for project titles */
+    margin-top: 0;
+    border-bottom: 2px solid #2d3748;
+    padding-bottom: 0.5rem;
+}
+
+.data-project-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.tools-used {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #a0aec0; /* Light gray for tool label */
+}
+
+.tools-used span {
+    display: inline-block;
+    background-color: #2d3748; /* Darker chip background */
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+.project-links a {
+    color: #63b3ed; /* Light blue for links */
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Back Button Style */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.back-link a {
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.back-link a:hover {
+    background: #555;
+}
