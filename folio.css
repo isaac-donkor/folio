@@ -84,58 +84,21 @@ h2 {
     transform: translateY(0);
 }
 
-/* BINANCE CARD */
-.binance-pay {
-    max-width: 320px;
-    width: 100%;
-
-    background: #111;
-    border-radius: 10px;
-    padding: 20px;
-
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.binance-pay:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 14px rgba(255, 255, 255, 0.12);
-}
-
-/* BINANCE QR */
-.binance-pay img {
+.binance-qr-wrapper {
     width: 180px;
     height: 180px;
 
     background: #fff;
-    padding: 10px;
     border-radius: 8px;
     border: 2px solid #F0B90B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* BINANCE TEXT */
-.binance-pay p:first-child {
-    font-weight: 600;
-    color: #F0B90B;
-}
-
-.binance-note {
-    font-size: 0.9rem;
-    color: #bbb;
-    line-height: 1.4;
-}
-
-/* MOBILE STACK */
-@media (max-width: 600px) {
-    .payment-methods {
-        flex-direction: column;
-        align-items: center;
-    }
+.binance-qr-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
