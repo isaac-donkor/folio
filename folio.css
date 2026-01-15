@@ -13,6 +13,7 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
+    animation: fadeInDown 1s ease;
 }
 
 .profile-pic {
@@ -21,6 +22,7 @@ header {
     background: white;
     overflow: hidden;
     border-radius: 15px;
+    animation: rotateIn 1s ease;
 }
 
 .profile-pic img {
@@ -38,10 +40,11 @@ header {
 }
 
 .github-link a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-flex;
-    gap: 8px;
+    color: #fff; 
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* SECTIONS */
@@ -51,7 +54,8 @@ section {
 }
 
 .carousel { 
-    overflow: hidden; width: 100%; 
+    overflow: hidden; 
+    width: 100%; 
     position: relative; 
 } 
 .carousel-track { 
@@ -73,6 +77,45 @@ section {
     object-fit: contain; 
     max-height: 70px; 
 } 
+@keyframes scroll {
+    0% { 
+        transform: translateX(0); 
+} 100% { 
+transform: translateX(-50%);
+ } 
+}
+h2 { 
+    text-align: center; 
+    margin-bottom: 1rem; 
+    font-size: 2rem; 
+} 
+.clients, .projects { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+    justify-content: center; 
+} 
+.projects a { 
+    text-decoration: none; 
+    color: inherit; 
+} 
+.client-logo, .project-card { 
+    background: #111; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(255,255,255,0.1); 
+    padding: 1rem; 
+    transition: transform 0.3s ease; 
+    text-align: center; 
+} 
+.client-logo:hover, 
+.project-card:hover { 
+    transform: scale(1.05); 
+} 
+.client-logo img { 
+    max-height: 50px; 
+    display: block; 
+    margin: auto; 
+}
 .project-card { 
     width: 250px; 
 } 
