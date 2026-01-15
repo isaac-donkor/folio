@@ -1,179 +1,72 @@
 body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #000;
-            color: #fff;
-        }
-        header {
-            background: #1f2937;
-            color: white;
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            animation: fadeInDown 1s ease;
-        }
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            background: white;
-            overflow: hidden;
-            border-radius: 15px;
-            animation: rotateIn 1s ease;
-        }
-        .profile-pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .header-text {
-            flex: 1;
-        }
-        .github-link {
-            margin-top: 0.5rem;
-        }
-        .github-link a {
-            color: #fff;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-         section {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background: #1f2937;
     padding: 2rem;
-    background-color: #000;
-  }
-
-  .carousel {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
-
-  .carousel-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    gap: 3rem;
-  }
-
-  .client-logo {
-    flex: 0 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 150px;
-    max-width: 200px;
-  }
+    gap: 2rem;
+}
 
-  .client-logo img {
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    background: white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.profile-pic img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    max-height: 70px;
-  }
+    height: 100%;
+    object-fit: cover;
+}
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
+.github-link a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    gap: 8px;
+}
 
-  h2 {
+/* SECTIONS */
+section {
+    padding: 2rem;
+    background: #000;
+}
+
+h2 {
     text-align: center;
-    margin-bottom: 1rem;
     font-size: 2rem;
-  }
-        .clients, .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: center;
-        }
-        .projects a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .client-logo, .project-card {
-            background: #111;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(255,255,255,0.1);
-            padding: 1rem;
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-        .client-logo:hover, .project-card:hover {
-            transform: scale(1.05);
-        }
-        .client-logo img {
-            max-height: 50px;
-            display: block;
-            margin: auto;
-        }
-        .project-card {
-            width: 250px;
-        }
-        .project-card i {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        input, textarea {
-            padding: 0.8rem;
-            font-size: 1rem;
-            border: 1px solid #444;
-            background: #222;
-            color: white;
-            border-radius: 5px;
-        }
-        button {
-            background: #1f2937;
-            color: white;
-            border: none;
-            padding: 0.8rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #111827;
-        }
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes rotateIn {
-            from {
-                transform: rotateY(90deg);
-                opacity: 0;
-            }
-            to {
-                transform: rotateY(0);
-                opacity: 1;
-            }
-        }
+    margin-bottom: 1rem;
+}
+
+/* PAYMENT METHODS WRAPPER */
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* PAYPAL BUTTON */
 .paypal-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
 
-    margin-top: 20px;
     padding: 12px 24px;
-
-    background-color: #0070ba; /* PayPal blue */
-    color: #ffffff;
+    background-color: #0070ba;
+    color: #fff;
 
     text-decoration: none;
     font-weight: 600;
@@ -184,48 +77,65 @@ body {
 
 .paypal-btn:hover {
     background-color: #005ea6;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .paypal-btn:active {
     transform: translateY(0);
 }
 
-.binance-qr-btn {
-    display: inline-flex;
+/* BINANCE CARD */
+.binance-pay {
+    max-width: 320px;
+    width: 100%;
+
+    background: #111;
+    border-radius: 10px;
+    padding: 20px;
+
+    text-align: center;
+
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 
-    margin-top: 20px;
-    padding: 16px 24px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    background-color: #F0B90B; /* Binance yellow */
-    color: #000000;
+.binance-pay:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 14px rgba(255, 255, 255, 0.12);
+}
 
-    text-decoration: none;
+/* BINANCE QR */
+.binance-pay img {
+    width: 180px;
+    height: 180px;
+
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #F0B90B;
+}
+
+/* BINANCE TEXT */
+.binance-pay p:first-child {
     font-weight: 600;
-    border-radius: 6px;
-
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    color: #F0B90B;
 }
 
-.binance-qr-btn img {
-    width: 160px;
-    height: 160px;
-    border-radius: 6px;
-    background: #ffffff;
-    padding: 8px;
+.binance-note {
+    font-size: 0.9rem;
+    color: #bbb;
+    line-height: 1.4;
 }
 
-.binance-qr-btn:hover {
-    background-color: #d9a406;
-    transform: translateY(-1px);
+/* MOBILE STACK */
+@media (max-width: 600px) {
+    .payment-methods {
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-.binance-qr-btn:active {
-    transform: translateY(0);
-}
-
-
-        
