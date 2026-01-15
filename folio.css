@@ -191,4 +191,41 @@ body {
     transform: translateY(0);
 }
 
+.binance-qr-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+    padding: 16px 24px;
+
+    background-color: #F0B90B; /* Binance yellow */
+    color: #000000;
+
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.binance-qr-btn img {
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    background: #ffffff;
+    padding: 8px;
+}
+
+.binance-qr-btn:hover {
+    background-color: #d9a406;
+    transform: translateY(-1px);
+}
+
+.binance-qr-btn:active {
+    transform: translateY(0);
+}
+
+
         
